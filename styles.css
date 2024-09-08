@@ -1,0 +1,33 @@
+.expandable-pill-wrapper {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.expandable-pill-header {
+    padding: 10px;
+    background-color: var(--background-secondary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expandable-pill-icon::after {
+    content: '▼';
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.expandable-pill-icon.expanded::after {
+    transform: rotate(180deg);
+}
+
+.expandable-pill-content {
+    padding: 10px;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.expandable-pill-content.hidden {
+    display: none;
+}

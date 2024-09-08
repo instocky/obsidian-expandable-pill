@@ -1,0 +1,43 @@
+# Зависимости
+node_modules/
+
+# Файлы сборки
+main.js
+*.js.map
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Кэш и временные файлы
+.cache/
+.temp/
+
+# Файлы сборки Obsidian
+data.json
+
+# Другие специфичные для проекта файлы и директории
+# Добавьте сюда любые дополнительные файлы или папки, которые не должны быть в репозитории
+*.zip
+*.html
+notes.md 
