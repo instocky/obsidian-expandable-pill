@@ -17,7 +17,7 @@ export default class ExpandablePillPlugin extends Plugin {
             id: 'insert-expandable-pill',
             name: 'Вставить Expandable Pill',
             editorCallback: (editor: Editor, view: MarkdownView) => {
-                const template = '```expandable-pill\nЗаголовок\nСодержимое раскрывающегося блока\n```';
+                const template = '```expandable-pill\nСодержание\n\nСодержимое раскрывающегося блока\n```';
                 editor.replaceSelection(template);
             }
         });
@@ -26,7 +26,7 @@ export default class ExpandablePillPlugin extends Plugin {
             const activeView = this.app.workspace.getActiveViewOfType(MarkdownView);
             if (activeView) {
                 const editor = activeView.editor;
-                const template = '```expandable-pill\nЗаголовок\nСодержимое раскрывающегося блока\n```';
+                const template = '```expandable-pill\nСодержание\n\nСодержимое раскрывающегося блока\n```';
                 editor.replaceSelection(template);
             } else {
                 new Notice('Откройте файл для вставки Expandable Pill');
